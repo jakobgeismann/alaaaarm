@@ -24,7 +24,8 @@
         console.log("checking key: "+key);
               var key = $(this).data('issue-key');
               if(localStorage.getItem(key) != "true"){
-                 var a = new Audio("http://soundbible.com/mp3/submarine-diving-alarm-daniel_simon.mp3");
+                 //var a = new Audio("http://soundbible.com/mp3/submarine-diving-alarm-daniel_simon.mp3");
+                 var a = new Audio("https://raw.githubusercontent.com/jakobgeismann/alaaaarm/master/alarm.mp3");
                   a.play();
                   localStorage.setItem(key,"true");
               }
